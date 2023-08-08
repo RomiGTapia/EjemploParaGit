@@ -16,6 +16,8 @@ public class EjemploParaGit {
      */
     public static void main(String[] args) {
         System.out.println("Hola Rodrigo Gabriel");
+        
+        System.out.println("Hola como va?");
     }
 
 }
