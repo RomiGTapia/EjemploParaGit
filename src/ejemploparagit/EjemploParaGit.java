@@ -24,12 +24,13 @@ public class EjemploParaGit {
  *   Por ejemplo, en Slytherin se premia la ambición y la astucia.
      */
     public static void main(String[] args) {
-
+        boolean isOK;
         int option;
         Scanner leer = new Scanner(System.in);
         System.out.println("Bienvenido soy el sombrero seleccionador del universo Magico");
         System.out.println("Responde este cuestinario de 5 preguntas y lo sabras");
         do {
+            isOK = true;
             System.out.println("¿Cual de estas palabras te describe mejor?");
 
             System.out.println("1.Valentia");
@@ -60,9 +61,10 @@ public class EjemploParaGit {
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida");
+                    isOK = false;
             }
 
-        } while (option != 5);
+        } while (option != 5 && !isOK);
 
     }
 
